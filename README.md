@@ -35,3 +35,6 @@ python export_shopify_channel_performance.py
 Notes:
 - `webdriver-manager` will download the ChromeDriver automatically.
 - The notebook contains fallback pip-installs for missing packages; prefer using the `requirements.txt` in reproducible environments.
+
+# Shopify_project
+This project uses Shopify’s web analytics to generate a weekly sales report that highlights performance across different channels. The report will help stakeholders gain clearer insights into overall sales, conversion rates, user retention, and related metrics.
