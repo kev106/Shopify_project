@@ -1,0 +1,167 @@
+2025-12-19 17:59:42,731 INFO: Launching browser (headless=False)
+2025-12-19 17:59:44,975 INFO: Navigated to admin start URL
+2025-12-19 18:01:11,901 INFO: Downloaded and saved to C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251219_180111.csv
+2025-12-19 18:01:12,369 INFO: Run finished with exit code 0
+2025-12-19 18:02:45,879 INFO: Launching browser (headless=False)
+2025-12-19 18:02:48,190 INFO: Navigated to admin start URL
+2025-12-19 18:02:48,198 INFO: No saved Playwright storage state found; performing automated login
+2025-12-19 18:02:48,198 INFO: Waiting for email input field...
+2025-12-19 18:02:48,247 INFO: Filled email: marga@kaiteandkyla.com
+2025-12-19 18:02:48,247 INFO: Clicking continue button...
+2025-12-19 18:02:52,372 INFO: Waiting for password input field...
+2025-12-19 18:02:52,494 INFO: Filled password
+2025-12-19 18:02:52,494 INFO: Clicking login button...
+2025-12-19 18:02:55,379 INFO: Checking for 2FA prompt...
+2025-12-19 18:03:05,390 INFO: No 2FA prompt detected or timeout: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"two_factor_code\"], input[name=\"otp\"], input[placeholder*=\"code\" i], input[placeholder*=\"2fa\" i]") to be visible
+
+2025-12-19 18:03:05,390 INFO: Login automation complete; storage state will be saved after admin UI loads
+2025-12-19 18:03:05,523 INFO: Saved storage state to playwright_storage_state.json
+2025-12-19 18:04:18,529 ERROR: Runner crashed with exception: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("nav[aria-label='Primary'], #AppFrameMain") to be visible
+Traceback (most recent call last):
+  File "C:\Users\kev\My Drive\Shopify_project\playwright_runner.py", line 193, in <module>
+    exit_code = run_export(headless=is_headless, timeout_seconds=int(os.getenv('LONG_TIMEOUT', '180')))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kev\My Drive\Shopify_project\playwright_runner.py", line 145, in run_export
+    page.wait_for_selector("nav[aria-label='Primary'], #AppFrameMain", timeout=timeout_seconds*1000)
+  File "C:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\playwright\sync_api\_generated.py", line 8213, in wait_for_selector
+    self._sync(
+  File "C:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+  File "C:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("nav[aria-label='Primary'], #AppFrameMain") to be visible
+
+2025-12-19 18:04:18,529 INFO: Run finished with exit code unknown
+2025-12-19 18:06:51,912 INFO: Launching browser (headless=False)
+2025-12-19 18:06:53,989 INFO: Navigated to admin start URL
+2025-12-19 18:06:53,989 INFO: No saved Playwright storage state found; performing automated login
+2025-12-19 18:06:53,989 INFO: Waiting for email input field...
+2025-12-19 18:06:54,039 INFO: Filled email: marga@caiteandkyla.com
+2025-12-19 18:06:54,039 INFO: Clicking continue button...
+2025-12-19 18:06:57,500 INFO: Waiting for password input field...
+2025-12-19 18:06:57,595 INFO: Filled password
+2025-12-19 18:06:57,595 INFO: Clicking login button...
+2025-12-19 18:07:27,840 INFO: Checking for 2FA prompt...
+2025-12-19 18:07:37,856 INFO: No 2FA prompt detected or timeout: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"two_factor_code\"], input[name=\"otp\"], input[placeholder*=\"code\" i], input[placeholder*=\"2fa\" i]") to be visible
+
+2025-12-19 18:07:37,856 INFO: Login automation complete; storage state will be saved after admin UI loads
+2025-12-19 18:07:38,007 INFO: Saved storage state to playwright_storage_state.json
+2025-12-19 18:08:30,045 INFO: Downloaded and saved to C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251219_180829.csv
+2025-12-19 18:08:30,342 INFO: Run finished with exit code 0
+2025-12-19 22:05:05,727 INFO: Launching browser (headless=False)
+2025-12-19 22:05:07,460 INFO: Navigated to admin start URL
+2025-12-19 22:12:49,264 INFO: No valid token found; starting OAuth flow (browser will open)...
+2025-12-19 22:12:57,311 INFO: OAuth authentication complete; saving token...
+2025-12-19 22:12:57,311 INFO: Saved OAuth token to C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-19 22:12:58,203 ERROR: Failed to upload CSV to Google Sheets: <HttpError 400 when requesting https://sheets.googleapis.com/v4/spreadsheets/1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU/values/Sheet1:clear?alt=json returned "Unable to parse range: Sheet1". Details: "Unable to parse range: Sheet1">
+Traceback (most recent call last):
+  File "c:\Users\kev\My Drive\Shopify_project\playwright_runner.py", line 325, in upload_csv_to_sheet
+    service.spreadsheets().values().clear(spreadsheetId=sheet_id, range=sheet_name).execute()
+  File "c:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 400 when requesting https://sheets.googleapis.com/v4/spreadsheets/1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU/values/Sheet1:clear?alt=json returned "Unable to parse range: Sheet1". Details: "Unable to parse range: Sheet1">
+2025-12-19 22:13:13,390 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-19 22:13:13,844 ERROR: Failed to upload CSV to Google Sheets: <HttpError 400 when requesting https://sheets.googleapis.com/v4/spreadsheets/1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU/values/Sheet1%21A1%3AZZ:clear?alt=json returned "Unable to parse range: Sheet1!A1:ZZ". Details: "Unable to parse range: Sheet1!A1:ZZ">
+Traceback (most recent call last):
+  File "c:\Users\kev\My Drive\Shopify_project\playwright_runner.py", line 327, in upload_csv_to_sheet
+    service.spreadsheets().values().clear(spreadsheetId=sheet_id, range=range_spec).execute()
+  File "c:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\kev\My Drive\Shopify_project\.venv\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 400 when requesting https://sheets.googleapis.com/v4/spreadsheets/1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU/values/Sheet1%21A1%3AZZ:clear?alt=json returned "Unable to parse range: Sheet1!A1:ZZ". Details: "Unable to parse range: Sheet1!A1:ZZ">
+2025-12-19 22:13:26,379 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-19 22:13:27,172 INFO: Found sheet: Retail (using instead of configured Sheet1)
+2025-12-19 22:13:27,396 INFO: Uploaded 51 rows to sheet Retail (1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU)
+2025-12-19 22:13:36,803 INFO: Launching browser (headless=False)
+2025-12-19 22:13:39,097 INFO: Navigated to admin start URL
+2025-12-19 22:14:09,116 INFO: Admin UI selector timeout; checking if page is already loaded
+2025-12-19 22:14:14,377 INFO: Admin UI detected via URL
+2025-12-19 22:14:19,144 INFO: Downloaded and saved to C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251219_221419.csv
+2025-12-19 22:14:19,144 INFO: UPLOAD_TO_SHEET enabled; attempting to upload C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251219_221419.csv to Google Sheets
+2025-12-19 22:14:19,445 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-19 22:14:20,084 INFO: Found sheet: Retail (using instead of configured Sheet1)
+2025-12-19 22:14:20,312 INFO: Uploaded 51 rows to sheet Retail (1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU)
+2025-12-19 22:14:20,671 INFO: Run finished with exit code 0
+2025-12-19 22:19:27,786 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-19 22:19:28,461 INFO: Found sheet: Retail (using instead of configured Automated_reports)
+2025-12-19 22:19:28,700 INFO: Uploaded 51 rows to sheet Retail (1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU)
+2025-12-19 22:19:41,650 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-19 22:19:41,652 INFO: Using explicitly configured sheet name: Automated_reports
+2025-12-19 22:19:42,192 INFO: Uploaded 51 rows to sheet Automated_reports (1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU)
+2025-12-19 22:21:49,291 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-19 22:21:49,309 INFO: Using explicitly configured sheet name: Automated_reports
+2025-12-19 22:21:49,941 INFO: Uploaded 51 rows to sheet Automated_reports (1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU)
+2025-12-21 17:33:53,523 INFO: Launching browser (headless=False)
+2025-12-21 17:33:57,295 INFO: Navigated to admin start URL
+2025-12-21 17:34:27,306 INFO: Admin UI selector timeout; checking if page is already loaded
+2025-12-21 17:34:33,835 INFO: Admin UI detected via URL
+2025-12-21 17:34:40,730 INFO: Downloaded and saved to C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251221_173440.csv
+2025-12-21 17:34:40,733 INFO: UPLOAD_TO_SHEET enabled; attempting to upload C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251221_173440.csv to Google Sheets
+2025-12-21 17:34:40,733 ERROR: Google OAuth libraries not installed: No module named 'google'
+Traceback (most recent call last):
+  File "C:\Users\kev\My Drive\Shopify_project\playwright_runner.py", line 271, in upload_csv_to_sheet
+    from google.auth.transport.requests import Request
+ModuleNotFoundError: No module named 'google'
+2025-12-21 17:34:40,733 ERROR: Upload to Google Sheets failed: No module named 'google'
+Traceback (most recent call last):
+  File "C:\Users\kev\My Drive\Shopify_project\playwright_runner.py", line 234, in run_export
+    upload_csv_to_sheet(dest)
+  File "C:\Users\kev\My Drive\Shopify_project\playwright_runner.py", line 271, in upload_csv_to_sheet
+    from google.auth.transport.requests import Request
+ModuleNotFoundError: No module named 'google'
+2025-12-21 17:34:40,735 WARNING: Alert not configured (ALERT_SMTP_HOST or ALERT_TO missing). Skipping email alert.
+2025-12-21 17:34:41,324 INFO: Run finished with exit code 0
+2025-12-21 18:22:58,949 INFO: Launching browser (headless=False)
+2025-12-21 18:23:01,607 INFO: Navigated to admin start URL
+2025-12-21 18:23:30,124 INFO: Admin UI detected via selector
+2025-12-21 18:23:35,064 INFO: Downloaded and saved to C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251221_182334.csv
+2025-12-21 18:23:35,065 INFO: UPLOAD_TO_SHEET enabled; attempting to upload C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251221_182334.csv to Google Sheets
+2025-12-21 18:23:35,533 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-21 18:23:35,533 INFO: Token expired; refreshing...
+2025-12-21 18:23:35,992 INFO: Saved OAuth token to C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-21 18:23:36,018 INFO: Using explicitly configured sheet name: Automated_reports
+2025-12-21 18:23:37,360 INFO: Uploaded 51 rows to sheet Automated_reports (1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU)
+2025-12-21 18:23:37,834 INFO: Run finished with exit code 0
+2025-12-21 18:58:27,561 INFO: Launching browser (headless=False)
+2025-12-21 18:58:30,055 INFO: Navigated to admin start URL
+2025-12-21 18:58:59,827 INFO: Admin UI detected via selector
+2025-12-21 18:59:07,599 INFO: Downloaded and saved to C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251221_185907.csv
+2025-12-21 18:59:07,599 INFO: UPLOAD_TO_SHEET enabled; attempting to upload C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251221_185907.csv to Google Sheets
+2025-12-21 18:59:08,091 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-21 18:59:08,097 INFO: Using explicitly configured sheet name: Automated_reports
+2025-12-21 18:59:09,052 INFO: Uploaded 51 rows to sheet Automated_reports (1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU)
+2025-12-21 18:59:09,630 INFO: Run finished with exit code 0
+2025-12-21 19:36:12,172 INFO: Launching browser (headless=False)
+2025-12-21 19:36:14,406 INFO: Navigated to admin start URL
+2025-12-21 19:36:44,426 INFO: Admin UI selector timeout; checking if page is already loaded
+2025-12-21 19:36:50,346 INFO: Admin UI detected via URL
+2025-12-21 19:36:54,392 INFO: Downloaded and saved to C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251221_193654.csv
+2025-12-21 19:36:54,393 INFO: UPLOAD_TO_SHEET enabled; attempting to upload C:\Users\kev\My Drive\Shopify_project\downloads\shopify_channel_performance_US_2025-09-01_2025-12-19_20251221_193654.csv to Google Sheets
+2025-12-21 19:36:54,837 INFO: Loaded cached OAuth token from C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-21 19:36:54,838 INFO: Token expired; refreshing...
+2025-12-21 19:36:55,265 INFO: Saved OAuth token to C:\Users\kev\My Drive\Shopify_project\downloads\debug\token.json
+2025-12-21 19:36:55,270 INFO: Using explicitly configured sheet name: Automated_reports_updated
+2025-12-21 19:36:56,173 INFO: Uploaded 51 rows to sheet Automated_reports_updated (1O9tT7aiLDc8oqaFzpvDSJpOVk4vJsA-sW21JpYkr4qU)
+2025-12-21 19:36:56,846 INFO: Run finished with exit code 0

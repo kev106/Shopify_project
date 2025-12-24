@@ -1,0 +1,9 @@
+# Ignore Google service account JSON keys and other sensitive local credentials
+gsa.json
+*.gsa.json
+*.service-account.json
+# Ignore any local secret JSONs placed in the project
+*.json
+# Ignore OAuth token files
+downloads/debug/token.json
+token.json
